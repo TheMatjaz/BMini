@@ -1,0 +1,91 @@
+% Copyright © 2018-2019 Matjaž Guštin <dev@matjaz.it>
+% All rights reserved.
+% 
+% Redistribution and use in source and binary forms, with or without
+% modification, are permitted provided that the following conditions are met:
+% 
+% 1. Redistributions of source code must retain the above copyright notice,
+%    this list of conditions and the following disclaimer.
+% 2. Redistributions in binary form must reproduce the above copyright
+%    notice, this list of conditions and the following disclaimer in the
+%    documentation and/or other materials provided with the distribution.
+% 3. Neither the name of the copyright holder nor the names of its
+%    contributors may be used to endorse or promote products derived from
+%    this software without specific prior written permission.
+% 
+% THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+% AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+% IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+% ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+% LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+% CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+% SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+% INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+% CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+% ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+% POSSIBILITY OF SUCH DAMAGE.
+
+\usepackage{listings}
+\lstdefinestyle{pythonstyle}{
+    language=python,
+    basicstyle=\footnotesize\ttfamily,
+    backgroundcolor=\color{codebackground},
+    commentstyle=\itshape\color{codegray},
+    keywordstyle=\bfseries\color{codeblue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\bfseries\color{codegreen},
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4,
+    morekeywords={},
+    otherkeywords={True, False},
+}
+\lstdefinestyle{cstyle}{
+    language=C,
+    basicstyle=\footnotesize\ttfamily,
+    backgroundcolor=\color{codebackground},
+    commentstyle=\itshape\color{codegray},
+    keywordstyle=\bfseries\color{codeblue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\bfseries\color{codegreen},
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    morekeywords={
+        bool,
+        uint8\_t, uint16\_t, uint32\_t, uint64\_t,
+        int8\_t, int16\_t, int32\_t, int64\_t
+    },
+    otherkeywords={},
+}
+\lstdefinestyle{nostyle}{
+    basicstyle=\footnotesize\ttfamily,
+    backgroundcolor=\color{codebackground},
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    morekeywords={},
+    otherkeywords={},
+}
+\lstset{style=nostyle}
